@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import start from '../../public/assets/start.png';
 import stop from '../../public/assets/stop.png';
-function page() {
+function Page() {
   const videoRef = useRef(null);
   const mediaStreamRef = useRef(null);
   const mediaRecorderRef = useRef(null);
@@ -76,4 +76,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

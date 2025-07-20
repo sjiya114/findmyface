@@ -20,8 +20,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+
       >
+        <div
+          className="fixed inset-0 -z-10 bg-cover bg-center scale-110 blur-2xl"
+          style={{
+            backgroundImage: "url('/assets/banner.png')",
+          }}
+        />
         {children}
       </body>
     </html>
